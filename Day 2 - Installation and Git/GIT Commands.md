@@ -29,3 +29,6 @@
 	```
 	git config --global user.email “[valid-email]”
 	```
+
+## Videos 
+[5 Minute Overview of Git - YouTube](https://www.youtube.com/watch?v=xvwBtODV0ms)
