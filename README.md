@@ -13,4 +13,4 @@
 -  [Git Commands Used](./Day-2-Installation-and-Git/git-commands.md)
 
 ## Day - 4 HTML Cheatsheets
-- [Cheatsheet] (./Day-4-HTML-Basics/readme.md)
+- [Cheatsheet](./Day-4-HTML-Basics/readme.md)
