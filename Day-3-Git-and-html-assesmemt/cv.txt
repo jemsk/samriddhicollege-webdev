@@ -1,0 +1,39 @@
+Resume
+Alice in wonderland
+Jane Doe
+Web Developer
+
+Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.
+
+A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.
+
+Personal Information
+Bio:
+Age: 19
+Gender: Mystical
+Contact
+Email: jane@example.com
+Web: http://example.com
+Tel: 123 45678
+
+Experience
+Position
+
+Job Description
+
+Web Developer
+
+Alice in Wonderland
+
+Help and design a website for Mr. Alice
+Build a house using HTML
+Paint the house using CSS
+Make river flow using JS
+Internship
+
+Chocolate Factory
+
+Assist Web developer in writing documents.
+Carry HTML Bricks to the project
+Quotes I Love
+"It takes all the running you can do, to keep in the same place. If you want to get somewhere else, you must run at least twice as fast as that"
