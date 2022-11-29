@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;1,400&family=Yeseva+One&display=swap');
+/*
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Yeseva One', cursive;
+*/
+
+/**
+
+SEcondary color:      #F2545B
+Backgournd CREAM  #F3F7F0
+PRimary color : BLACK : #19323C
+
+*/
+/**x
+    BASE HTML TAGS
+*/
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Yeseva One', cursive;
+    color: #F2545B;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 36px;
+}
+h2 {
+    font-size: 30px ;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif
+    font-size: 16px;
+    color: #19323C;
+    line-height: 1.5;
+
+   
+}
+
+/** Layout **/
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    /* padding: 10px 10px 10px 10px; */
+    /* padding: 10px; */
+    padding: 0px 20px;
+    margin-bottom: 30px;
+}
+
+h1.page-title {
+
+    display: block;
+    text-align: center;
+    background-color: #F2545B;
+    color: white;
+    text-transform: uppercase;
+}
+
+
+/** Helper Classes **/
+.default-background
+{
+    background-color: #F3F7F0 !important;
+}
+
+.default-border {
+    border: 3px solid #F2545B;
+    border-bottom: 3px #19323C solid  ;
+}
+
+.align-center {
+    margin: 0 auto;
+    width: 200px;
+    display: block;
+}
