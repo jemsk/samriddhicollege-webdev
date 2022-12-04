@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box Model</title>
+  </head>
+
+  <body>
+
+    <h1>Box Model Display Position</h1>
+    <section class="hide">
+        <p>This is a very short paragraph</p>
+        <ul>
+          <li>Item One</li>
+          <li>Item Two</li>
+          <li>Item Three</li>
+        </ul>
+        <p>
+          I am another paragraph. Some of the <span class="block">words</span> have
+          been wrapped in a <span>span element</span>.
+        </p>
+        
+        <p class="inline hide">I am a paragraph. A short one.</p>
+        <p class="inline hide">I am another paragraph. Also a short one.</p>
+    </section>
+  
+
+    <section class="hide">
+    <h2>Box Model Image</h2>
+    <img src="./images/box-model.png" alt="box-model">
+    </section>
+
+
+
+    <section class="boxes show">
+
+        <div class="default">
+            <h2>Box Sizing - Default Behaviour</h2>
+            <div class="box"></div>
+            <p>
+                The actual space taken up by the box will be <span>410px</span> wide (350 + 25 + 25 + 5 + 5) and <span>210px</span> high (150 + 25 + 25 + 5 + 5).
+            </p>
+        </div>
+
+        <div class="boxes show">
+            <h2>Box Sizing - Intutive Behaviour</h2>
+            <div class="box box-fix"></div>
+            <img src="./images/alternate-box-model.png" alt="">
+        </div>
+    </section>
+
+  
+
+    <div class="margins hide">
+        <h2>Margin colapsing</h2>
+            <p class=" box m-b-10">Margin collapsing - Margin Bottom 10px
+            </p>
+            <p class=" box m-t-20">Margin Top of 20PX</p>
+    </div>
+  </body>
+
+  <style>
+
+    /* html {
+        box-sizing: border-box;
+    } */
+
+    body {
+      border: 2px solid black;
+
+    }
+    p,
+    ul {
+      border: 2px solid purple;
+      padding: 0.5em;
+    }
+
+    .block,
+    li {
+      border: 2px solid blue;
+      padding: 0.5em;
+    }
+
+    span,
+    li {
+      border: 2px solid red;
+    }
+    ul {
+      display: flex;
+      /* display: inline-flex; */
+      list-style: none;
+    }
+
+
+    /**
+        UTILITY CLASSES
+    **/
+    .block {
+      display: block;
+    }
+
+    .inline {
+      display: inline;
+    }
+    .hide {
+        display: none;
+    }
+
+    .show {
+        display: block;
+    }
+
+    .box {
+        width: 350px;
+        height: 150px;
+        margin: 10px;
+        padding: 25px;
+        border: 5px solid black;
+    }
+
+    .box-fix {
+        box-sizing: border-box;
+    }
+    .m-t-10 {
+        margin-top: 10px;
+    }
+    .m-b-20 {
+    }
+
+
+    .m-t-20 {
+        margin-top: 20px;
+    }
+    .m-t-200 {
+        margin-top: 200px;
+    }
+    
+  </style>
+</html>
