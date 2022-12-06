@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Float</title>
+  </head>
+  <body>
+    <div class="box clr-blue">
+      <p>Some text inside the box.</p>
+    </div>
+    <div class="box clr-red">
+      <p>Some text inside the box.</p>
+    </div>
+    <div class="box clr-blue">
+      <p>Some text inside the box.</p>
+    </div>
+    <div class="box clr-red">
+      <p>Some text inside the box.</p>
+    </div>
+    <div class="clearfix"></div>
+    
+    aksjdfasjdl
+
+    <div class="container"></div>
+  </body>
+
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .box {
+      position: relative;
+      float: right;
+      width: 20%;
+      /* padding: 50px;  */
+    }
+
+    .clearfix::after {
+      content: "";
+      clear: both;
+      display: table;
+    }
+    .clr-blue {
+      background-color: blue;
+    }
+    .clr-red {
+      background-color: red;
+    }
+  </style>
+</html>

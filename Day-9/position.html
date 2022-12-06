@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=3.0" />
+    <title>Relative, Absolute, Fixed</title>
+  </head>
+  <body>
+    <div class="parent">
+      <div class="child child1">
+
+        <div class="grandchild"></div>
+      </div>
+      <div class="child child2"></div>
+      <div class="child child3"></div>
+    </div>
+  </body>
+  <style>
+    .parent {
+    padding: 10px;
+      height: 600px;
+      border: 10px solid red;
+      /* position: relative; */
+      width: 200px;
+    }
+    .child {
+      height: 100px;
+      width: 200px;
+      
+
+    }
+    .grandchild {
+      
+    }
+    .child1 {
+      position: relative;
+
+      top:10px;
+      left:10px;
+
+      /* bottom:0; */
+      /* left: 0px; */
+      /* right: 0px; */
+      background-color: rgb(50, 38, 20);
+      /* position: static; */
+    }
+
+    .child2 {
+      position: absolute;
+    
+
+      background-color: rgb(23, 154, 219);
+      /* position: relative; */
+
+    }
+
+    .child3 {
+      background-color: rgb(199, 209, 14);
+      position: fixed;
+
+      /* position: absolute; */
+      top: 12px;
+      left: 0px;
+    }
+  </style>
+</html>
