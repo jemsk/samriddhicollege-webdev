@@ -7,6 +7,15 @@
      #F5CF8E  Yellow 
      #D6E9FE  Light blue
 
+    --primary-color: #b2d6ff;
+    --secondary-color: #d6e9fe;
+    --accent-color-1: #f09a9d;
+    --accent-color-1-dark: #f07e82;
+    --accent-color-2: #f5cf8e;
+    --accent-white: #fff;
+    --accent-gray: rgb(240, 240, 240);
+    --accent-gray-light: #fcfcfc;
+
      For fonts to use  pair any font https://www.fontpair.co/all
      Only Two Fonts
 **/
@@ -105,6 +114,28 @@
 }
 
 /** Helper Utilties **/
+.clearfix:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+  }
+  
+  /* Mark Hadley's fix for IE Mac */
+  .clearfix {
+    display: inline-block;
+  }
+  
+  /* Hides from IE Mac \*/
+  * html .clearfix {
+    height: 1%;
+  }
+  .clearfix {
+    display: block;
+  }
+
+  
 .btn {
 
 }
