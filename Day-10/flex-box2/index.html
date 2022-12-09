@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flexbox</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Flexbox with real content</h1>
+
+      <div class="content">
+        <div class="col">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis animi,
+          suscipit magnam voluptatibus dolorum molestiae laboriosam, sapiente
+          sunt ut facilis esse commodi. Suscipit quam voluptatem quidem vero
+          aperiam corporis perspiciatis!
+        </div>
+        <div class="col">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+          magnam perferendis fuga, corporis ipsum fugiat aperiam. Suscipit quasi
+          facere dolorum unde nihil rerum praesentium harum, sit quas aperiam
+          sapiente maxime eaque quisquam qui eos tempore nostrum officiis quam
+          ipsum blanditiis. Incidunt eum provident sit laudantium fugit impedit
+          quam, ducimus est.
+        </div>
+        <div class="col">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+          magnam perferendis fuga, corporis ipsum fugiat aperiam. Suscipit quasi
+          facere dolorum unde nihil rerum praesentium harum, sit quas aperiam
+          sapiente maxime eaque quisquam qui eos tempore nostrum officiis quam
+          ipsum blanditiis. Incidunt eum provident sit laudantium fugit impedit
+          quam, ducimus est.
+        </div>
+        <!-- <div class="col">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+          magnam perferendis fuga, corporis ipsum fugiat aperiam. Suscipit quasi
+          facere dolorum unde nihil rerum praesentium harum, sit quas aperiam
+          sapiente maxime eaque quisquam qui eos tempore nostrum officiis quam
+          ipsum blanditiis. Incidunt eum provident sit laudantium fugit impedit
+          quam, ducimus est.
+        </div>
+        <div class="col">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cumque
+          magnam perferendis fuga, corporis ipsum fugiat aperiam. Suscipit quasi
+          facere dolorum unde nihil rerum praesentium harum, sit quas aperiam
+          sapiente maxime eaque quisquam qui eos tempore nostrum officiis quam
+          ipsum blanditiis. Incidunt eum provident sit laudantium fugit impedit
+          quam, ducimus est.
+        </div> -->
+      </div>
+    </div>
+  </body>
+  <style>
+    * {
+        box-sizing: border-box;
+    }
+    .container {
+        margin: 0 auto;
+        width: 90%;
+    }
+    .content {
+      display: flex;
+      flex-wrap: wrap;
+    
+    }
+    .col {
+      padding: 10px;
+      /* width: 50%; */
+      flex: 300px;
+    }
+    .col:nth-child(1) {
+      background-color: red;
+      width: 1000px;
+      flex-grow: 2;
+    }
+
+    .col:nth-child(2) {
+      background-color: yellow;
+      flex-grow: 1;
+
+    }
+
+    .col:nth-child(3) {
+      background-color: orange;
+      flex-grow: 1;
+
+    }
+    .col:nth-child(4) {
+      background-color: olivedrab;
+    }
+    .col:nth-child(5) {
+      background-color: wheat;
+    }
+  </style>
+</html>
