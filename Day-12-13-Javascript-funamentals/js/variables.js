@@ -60,13 +60,13 @@ console.log ("This is JSON - JavaScript Object Notation - OBJECT")
 
 console.log ("⏩ Type of thisIsJSON  👉" , typeof(thisIsJSON))
 console.log ("⏩ Type of firstThreeMonthArray 👉 " , typeof(firstThreeMonthArray))
-// console.log ("⏩ Type of youAreDumb 👉 " , typeof(youAreDumb))
-// console.log ("⏩ Type of studyCourse 👉 " , typeof(studyCourse))
-// console.log ("⏩ Type of speedOfLight 👉 " , typeof(speedOfLight))
-// console.log ("⏩ Type of myGrade 👉 " , typeof(myGrade))
-// console.log ("⏩ Type of iDontKnow 👉 " , typeof(iDontKnow))
-// console.log ("⏩ Type of orphanVariable 👉 " , typeof(orphanVariable))
-// console.log ("⏩ Type of emptyObject 👉 " , typeof(emptyObject))
+console.log ("⏩ Type of youAreDumb 👉 " , typeof(youAreDumb))
+console.log ("⏩ Type of studyCourse 👉 " , typeof(studyCourse))
+console.log ("⏩ Type of speedOfLight 👉 " , typeof(speedOfLight))
+console.log ("⏩ Type of myGrade 👉 " , typeof(myGrade))
+console.log ("⏩ Type of iDontKnow 👉 " , typeof(iDontKnow))
+console.log ("⏩ Type of orphanVariable 👉 " , typeof(orphanVariable))
+console.log ("⏩ Type of emptyObject 👉 " , typeof(emptyObject))
 
 
 /****
@@ -82,20 +82,21 @@ console.log ("⏩ Type of firstThreeMonthArray 👉 " , typeof(firstThreeMonthAr
 **************************************************************
 */
 
-// let objNumber = new Number(myGrade);
-// let objString = new String("This is a String Object not a primitive data type");
+let objNumber = new Number(3.5);
+let objString = new String("This is a String Object not a primitive data type");
 
-// console.log ("👉  objNumber == myGrade " , objNumber == myGrade)
+console.log ("👉  objNumber == myGrade " , objNumber == myGrade)
 
 // console.log ("JS is crazy🤪🤪🤪")
 
-// console.log ("👉  objNumber === myGrade " , objNumber === myGrade)
+console.log ("👉  objNumber === myGrade " , objNumber === myGrade)
 
-// console.log ("⏩ Type of objNumber 👉 " , typeof(objNumber))
-// console.log ("⏩ Type of objString 👉 " , typeof(objString))
+console.log ("⏩ Type of objNumber 👉 " , typeof(objNumber))
+console.log ("⏩ Type of objString 👉 " , typeof(objString))
 
 // console.log("Find the difference")
 // console.log ("This is inside a quote 👉 objNumber ")
 // console.log (`This is inside backtick 👉 ${objNumber}`)
+
 
 

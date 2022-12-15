@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM manupulation</title>
+</head>
+<body>
+    <h1>Learning DOM Manipulation</h1>
+    
+    <div id="text">
+        Old Text
+    </div>
+
+    <button id ="btn">Change Text</button>
+    <button id ="btnClr">Change Color</button>
+</body>
+<script>
+
+    const changeBtn = document.getElementById('btn')
+    const changeClr = document.getElementById('btnClr')
+    const textField = document.getElementById('text')
+    let timesButtonCliked = 1;
+    changeBtn.addEventListener('click', function() {
+
+        textField.innerHTML = "My text is changed " + timesButtonCliked++
+    })
+
+    changeClr.addEventListener('click', function() {
+        textField.innerHTML = "Color has changed "
+        textField.style.backgroundColor = "green"
+    })
+</script>
+
+
+<style>
+
+    #text {
+        width: 300px;
+        height: 100px;
+        background-color: red;
+    }
+</style>
+</html>

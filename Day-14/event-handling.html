@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Event Handling</title>
+  </head>
+  <body id="body">
+    <button id="btn">Click Me</button>
+
+    <button class="allBtns" data-id="button2">Button 2</button>
+    <button class="allBtns">Button 3</button>
+  </body>
+
+  <script>
+    // let currentBody = document.getElementById('btn');
+    // let currentClass = document.getElementsByClassName('allBtns');
+
+    let btn = document.getElementById("btn");
+    // // console.log(document);
+
+    // console.log(currentClass);
+    btn.addEventListener("click", function (e) {
+      // console.log(e.layerX);
+      alert("clicked");
+    });
+
+    document.getElementById("body").addEventListener("click", function (e) {
+      alert("body is clicked");
+    });
+
+    var elements = document.getElementsByClassName("allBtns");
+
+    for (var i = 0; i < elements.length; i++) {
+      console.log(elements[i]);
+      elements[i].addEventListener("click", function () {
+        alert("all buttons hovered");
+      });
+    }
+
+    // Array.from(elements).forEach(function(element) {
+
+    // });
+
+    let colors = ['red', 'blue', 'green'];
+
+    console.log(generateRandom(100));
+    function generateRandom(number) {
+      let random = Math.random();
+
+      // console.log(random);
+      let randomBetween50 = random * number;
+      console.log(randomBetween50);
+
+      let radomFinal = Math.floor(randomBetween50);
+
+      return radomFinal;
+      let radomFinal2 = parseInt(randomBetween50);
+      console.log(radomFinal);
+      console.log(radomFinal2);
+    }
+  </script>
+</html>

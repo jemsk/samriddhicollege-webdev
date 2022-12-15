@@ -28,12 +28,14 @@ console.log(normalFunction, typeof(normalFunction));
 let functionCanBeVariables = function () {
     console.log ("😕😮🥴🤪")
 }
+
+
 functionCanBeVariables()
 console.log(functionCanBeVariables, typeof(functionCanBeVariables));
 
 
 
-let arrowOperatorFunction = () => {
+let arrowOperatorFunction = (length, breadth) => {
     console.log ("👨 Confusing.... 😕😕😕")
 
 }

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adding to DOM</title>
+</head>
+<body>
+    
+    <div id="parent">
+        Parent
+    </div>
+    <button id="btn">Add Child</button>
+</body>
+<script>
+    const parentDiv = document.getElementById('parent');
+    const btn = document.getElementById('btn');
+    // const childHtml = `<div class="child"></div>`;
+    btn.addEventListener('click', function(e) {
+        const childEl = document.createElement('div')
+        childEl.classList = 'child';
+        // parentDiv.innerHTML =  parentDiv.innerHTML + childHtml;
+        // parentDiv.innerHTML =  childHtml;
+        parentDiv.appendChild(childEl)
+        console.log("hello")
+    })
+</script>
+
+<style>
+
+    #parent {
+        background-color: aqua;
+        width: 100%;
+        min-height: 100px;
+    }
+    .child {
+        min-height: 30px;
+        width: 100%;
+        margin: .5em;
+        background-color: blueviolet;
+    }
+</style>
+</html>
