@@ -1,16 +1,16 @@
 
-const mytimoutfunciton = function() {
+const mytimeoutfunction = function() {
     console.log("Hello I am timeout 🕐")
 }
 
-const timeOutExample = setTimeout(mytimoutfunciton, 5000);
+setTimeout(mytimeoutfunction, 5000); //5 sec
 
+// mytimeoutfunction();
 // program to display time every 3 seconds
 function showTime() {
 
     // return new date and time
     let dateTime= new Date();
-    console.log (number);
 
 
     // returns the current local time
@@ -20,7 +20,7 @@ function showTime() {
 
 
     // display the time after 3 seconds
-    setTimeout(showTime, 3000);
+    setTimeout(showTime, 1000);
 
 }
 
