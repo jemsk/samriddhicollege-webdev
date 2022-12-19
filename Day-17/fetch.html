@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FETECh</title>
+</head>
+<body>
+    
+    <div id="quotes">
+
+        <div class ="quote">random quotes</div>
+    </div>
+
+
+
+</body>
+
+<script>
+
+   let apiUrl = "https://api.jikan.moe/v4/anime"
+    apiUrl = "https://api.quotable.io/random";
+    apiUrl = "https://api.quotable.io/quotes";
+    
+
+    let quoteEl = document.getElementById('quotes');
+
+    //Promise , Async
+
+
+    fetch(apiUrl).then( res => {
+        // console.log(res.status);
+        return res.json();
+
+    }).then(
+        data => {
+
+            // console.log(data);
+
+            results = data.results;
+
+            html = "";
+            results.forEach(quote => {
+                quoteHtml = ` <div class ="quote">${quote.content}</div>`;
+                // console.log(quoteHtml)
+
+                html +=quoteHtml
+            });
+            quoteEl.innerHTML = html
+
+        }
+    );
+
+
+
+    // console.log(response);
+    // let response = fetch(apiUrl).then()
+
+  
+    function fetchFunction () {
+      
+
+    }
+
+    async function fetchWithAwait () {
+
+            let response = await fetch(apiUrl);
+            // console.log(response)
+            let bd = await response.json();
+            console.log(bd)
+    }
+
+    fetchWithAwait();
+  
+</script>
+
+<style>
+    #quotes {
+        background-color: #ccc;
+        padding: 3em;
+        display: grid;
+        grid-template-columns:  1fr 1fr;
+    }
+    .quote {
+        background-color: white;
+        padding: 1em;
+        margin: 1em;
+
+    }
+</style>
+</html>
