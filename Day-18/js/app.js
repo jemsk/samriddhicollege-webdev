@@ -5,7 +5,19 @@ document.addEventListener("DOMContentLoaded", function() {
 const init = () =>{
 
 
+    const grids = document.getElementsByClassName('grid');
 
+    gridEls = Array.from(grids);
+
+    gridEls.forEach(element => {
+            element.addEventListener('click', handleClickOnGrid);
+    });
+};
+
+const handleClickOnGrid = (e) =>  {
+    const grid = e.currentTarget;
+    const clr = randomColorGenerator();
+    grid.style.backgroundColor =  clr;
 };
 
 const randomColorGenerator =  () =>
